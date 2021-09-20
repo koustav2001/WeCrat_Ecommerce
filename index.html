@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Crat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/62f9c2a150.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="navbar">
+            <div class="primary">
+                <img src="./website-logo.png" width="125px" class="logo">
+            </div>
+            <div class="navbar-primary">
+                <nav>
+                    <ul>
+                        <li><a href="#">SHOP<i class="fas fa-caret-down"></i></a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Store list</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="./menu.png" class="menu-icon">
+            <div class="secondary">
+                <div class="search">
+                    <div class="icon"></div>
+                        <div class="input">
+                            <input type="text" placeholder="Search" id="search">
+                        </div>
+                        <span class="clear" onclick="document.getElementById('search').value='' "></span>
+                    </div>
+                    <div class="login">
+                        <a href="login.html" class="far fa-user"></a>
+                    </div>
+                    <div class="shopping-cart">
+                        <div class="counter-cart">
+                            <span id="counter">1</span>
+                            <i data-feather ="shopping-bag"></i>
+                        </div>
+                        <button type="button" id="btn-animation">Add to Cart</button>
+                    </div>        
+                </div>    
+            </div> -->
+            <!-- Demo Navbar-->
+
+            <nav class="navbar">
+                <a href="#" class="nav-logo"><img src="./website-logo.png" width="125px" class="logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="far fa-user" aria-hidden="true"></i> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+            <div class="second-container">
+                <div class="contents">
+                    <span id="home">Home</span>
+                    <i class="fas fa-angle-double-right"></i>
+                    <span id="store">Store</span>
+                    <i class="fas fa-angle-double-right"></i>
+                    <span id="name">TanuartsBay</span>
+                </div>
+                <div class="banner-img">
+                    <img src="./tanu_artsbay-banner-Wecrat.jpg" alt="">
+                    <div class="profile-photo">
+                        <img src="./profile.png" height="600">
+                    </div>
+                </div>
+                
+                <div class="rating-section">
+                    <div class="name">
+                        <h1>KoustavArts</h1>
+                    </div>
+                    <div class="residence">
+                        <p>Kolkata,India No ratings found Yet!!</p>
+                    </div>
+                </div> 
+                 <div class="product-section">
+                    <span>  
+                        <input type="text" placeholder="Enter product name"id="product-name">
+                        <button id="search_b">Search</button>
+                    </span>
+                    <br>
+                    <select name="Sort" id="select">
+                        <option value="Sort by Popularity">Sort by Popularity</option>
+                        <option value="Sort by Average Rating">Sort by Average Rating</option>
+                        <option value="Sort by latest">Sort by latest</option>
+                        <option value="Sort by price:low to high">Sort by price:low to high</option>            
+                        <option value="Sort by price:high to low">Sort by price:high to low</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Featured Products-->
+            <div class="smallcontainer">
+                <h2 class="title">Featured CraftsWork</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-1.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Keep Life Simple - Handmade Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>500-</span>
+                        </i>
+                        <i class="fas fa-rupee-sign">
+                            <span>900</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="selectoptions">Select Options</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-2.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Small Steps Every Day - Handmade Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>353</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-3.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Your Own Universe - Hand-Pained Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>1,064</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-4.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Paint Your World - Handmade Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>722</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-5.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Love Without Limits - Handmade Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>415</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-6.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Love Has No Labels - Handmade Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>336</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-7.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Mother's Special - Personalized Wooden Fridge
+                            Magnets
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>448 -</span>
+                        </i>
+                        <i class="fas fa-rupee-sign">
+                            <span>1,210</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="read-more">Read-More</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-8.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Window Of Happiness - Handmade Watercolor
+                            Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>840</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                    <div class="col-4">
+                        <div class="heart-logo">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="image">
+                            <img src="./img-9.jpg">
+                        </div>
+                        <div class="rating">
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <h3>Dew - Handmade Bookmark
+                        </h3>
+                        <i class="fas fa-rupee-sign">
+                            <span>784</span>
+                        </i>
+                        <div class="paint">
+                            <p>Paintings</p>
+                        </div>
+                        <button id="add">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-brands">
+                <div class="title">
+                  <span><h2>Trending</h2></span>
+                </div>
+            <div class="brand-layout">
+                <div class="glide" id="glide1">
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                      <li class="glide__slide">
+                        <img src="./trend-1.jpg" alt="" >
+                        <div>
+                            <h3 class="life">Life Embroidery</h3>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-2.jpeg" alt="">
+                        <div class="earrings">Polymer Clay Earrings - Raven
+                            I
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-11.jpg" alt="">
+                        <div class="earrings">Polymer Clay Earrings - Raven
+                            II
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-4.jpg" alt="">
+                        <div class="earrings">Polymer Clay Earrings - Raven
+                            III
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-5.jpeg" alt="">
+                        <div class="earrings">Polymer Clay Earrings - Raven
+                            IV
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-6.jpg" alt="">
+                        <div class="earrings">Polymer Clay Earrings - Raven
+                            V
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-7.jpg" alt="">
+                        <div class="earrings">Graceful Chanderi Full Length
+                            Anarkali with Elegant Duppata
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <img src="./trend-8.jpg" alt="">
+                        <div class="earrings">Caramel Colored Ultra-Modern
+                           Dungaree
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!--Footer-->
+             <footer>
+                <div class="main-content">
+                    <div class="left box">
+                        <h2>Team</h2>
+                        <div class="content">
+                            <h3>Our Story</h3>
+                            <h3>Journey of our Creators</h3>  
+                        </div>  
+                    </div>
+                    <div class="center box">
+                        <h2>Contact Us</h2>
+                        <div class="content">
+                            <ul>
+                                <li>Shop</li>
+                                <li>Join Us</li>
+                                <li>FAQ</li>
+                                <li>Contact us</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms and Conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right box">
+                        <h2>Address</h2>
+                        <div class="content">
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">Kolkata,WestBengal</span>
+                            </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                <span class="text">(+91)9748219501</span>
+                            </div>
+                            <div class="email">
+                                <span class="fas fa-envelope"></span>
+                                <span class="text">weCrat@wecrat.com</span>
+                            </div>
+                            <div class="social">
+                                <h2>Follow Us</h2>
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bottom">
+                    <center>
+                        <span class="credit">Created By<a href="#">WeCrat</a></span>
+                        <span class="far fa-copyright"></span><span>2021 All rights Reserved</span>
+                    </center>
+                </div>
+            </footer> 
+    </div>
+    
+    <script>
+        const icon =document.querySelector('.icon');
+        const search =document.querySelector('.search');
+        icon.onclick = function()
+        {
+            search.classList.toggle('active');
+        }
+    </script>
+    <script src="animate.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
